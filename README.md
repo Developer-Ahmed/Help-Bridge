@@ -6,4 +6,3 @@ HelpBridge is an innovative platform designed to connect people who need assista
 Whether you're looking for help with a project, or advice on a specific topic, HelpBridge makes it easy to find the    
 right connections. By fostering a network of mutual aid, we aim to create a space where everyone can give and receive help,   
 making a positive impact in each other's lives.   
-**NOTE:** This project is still under development, and updates will be committed to this repository.
