@@ -63,7 +63,15 @@ app.use(async (req, res, next) => {
 
 app.set("view engine", "ejs");
 
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ limit: '10mb', extended: true}));
+
+// extra security
+const RateLimit = require("express-rate-limit");
+const limiter = RateLimit({
+  windowMs: 15*60*1000, // 15 minutes
+  max: 100, // limit of number of requests per ip
+  delayMs: 0 // disables delays
+});
 
 const http = require("http");
 const socketio = require("socket.io");
